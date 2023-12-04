@@ -4,9 +4,11 @@ Official repository for the code and datasets of the paper [A New Benchmark for 
 
 ## News
 
-30/11 Evaluation sets for Consumers and BID [published](https://www.kaggle.com/datasets/angelosgiotis/consumers-bid).
+4/12 - Code for apparent age and gender estimation published.
 
-28/11 Code for tracking published.
+30/11 - Evaluation sets for Consumers and BID [published](https://www.kaggle.com/datasets/angelosgiotis/consumers-bid).
+
+28/11 - Code for tracking published.
 
 ## Consumer-tracking
 

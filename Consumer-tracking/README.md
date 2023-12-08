@@ -1,11 +1,12 @@
 # Consumer tracking using ByteTrack + LSTM
 
+Tracking code for the experiments of the paper [A New Benchmark for Consumer Visual Tracking and Apparent Demographic Estimation from RGB and Thermal Images](https://www.mdpi.com/1424-8220/23/23/9510), published in Sensors, 2023.
 
 ## Installation instructions
 
 Before starting, update g++.
 
-Clone the repository in a directory of your choice and change to that directory.
+Clone the repository in a directory of your choice and change to that directory and then to "Consumer-tracking".
 
 Create a virtual environment with conda, we used Python 3.7.16 for all experiments:
 
@@ -87,6 +88,8 @@ All checkpoins (detector weights, LSTM weights) from our experiments can be down
 Place the checkpoints inside _weights_ directory.
 >If you change the name or path you will need to specify it with an argument when running the [evaluation](#evaluation-on-consumers-anonymized-test-set) script.
 
+>It is important to acknowledge that the inferred results on the published evaluation datasets for the proposed (ByteTrack+LSTM) method may exhibit slight variations compared to the reference performance indices in Tables 2 and 3 (training on the raw Consumers train set and inferring on the 'defaced' evaluation set). This marginal performance decrease can be attributed to the manual post-anonymization step for instances that were inadvertently missed by the defacement software.
+
 ### Re-ID models
 
 Some tracking methods require re-id models to function, if you evaluate methods other than byte, we also provide those in the above link.
@@ -140,3 +143,18 @@ YOLOX code from the official [repo](https://github.com/Megvii-BaseDetection/YOLO
 
 ## Citation
 If you use this codebase or the _Consumers_ dataset in your work please cite:
+
+```
+@Article{s23239510,
+AUTHOR = {Panagos, Iason-Ioannis and Giotis, Angelos P. and Sofianopoulos, Sokratis and Nikou, Christophoros},
+TITLE = {A New Benchmark for Consumer Visual Tracking and Apparent Demographic Estimation from RGB and Thermal Images},
+JOURNAL = {Sensors},
+VOLUME = {23},
+YEAR = {2023},
+NUMBER = {23},
+ARTICLE-NUMBER = {9510},
+URL = {https://www.mdpi.com/1424-8220/23/23/9510},
+ISSN = {1424-8220},
+DOI = {10.3390/s23239510}
+}
+```

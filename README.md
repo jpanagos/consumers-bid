@@ -10,9 +10,15 @@ Official repository for the code and datasets of the paper [A New Benchmark for 
 
 28/11 - Code for tracking published.
 
-## Consumer-tracking
+## Structure
 
-Code and experiments related to consumer tracking.
+**📁 Consumer-tracking:** Code and experiments related to consumer tracking.
+
+**📁 Apparent demographic estimation:** Code and experiments related to _apparent_ age-group and gender estimation.
+
+## License
+
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Citation
 If you use this _codebase_ or the _Consumers-BID_ datasets in your work, please include a citation to acknowledge the source:
